@@ -1,5 +1,7 @@
 <h2>スケジュール編集</h2>
 
+<%= render "shared/error", obj: @task %>
+
 <%= form_with model:@task do |f| %>
 <table>
   <tr>
@@ -22,9 +24,7 @@
     <th><%= f.label :schedule_memo, "スケジュールメモ" %></th>
     <td><%= f.text_area :schedule_memo %></td>
   </tr>
- 
 </table>
-
 
 <div>
   <ul>

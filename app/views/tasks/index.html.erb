@@ -1,10 +1,5 @@
-
 <main>
-<div>
-  <div>
-    <h2>スケジュール一覧</h2>
-  </div>
-</div>
+  <h2>スケジュール一覧</h2>
 
 <table>
   <thead>
@@ -38,15 +33,9 @@
       <td><%= link_to "編集", [:edit, task] %></td>
       <td><%= link_to "削除", task, method: :delete, data: {confirm: "本当に削除しますか？"} %></td>
     </tr>
-    
     <% end %>
-    
   </tbody>
-  
-  
-  
 </table>
-
 
 <%= link_to "スケジュール新規登録", :new_task %>
 
