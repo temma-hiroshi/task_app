@@ -2,7 +2,7 @@
 
 <%= render "shared/error", obj: @task %>
 
-<%= form_with model:@task do |f| %>
+<%= form_with model:@task, local: true do |f| %>
 <table>
   <tr>
     <th><%= f.label :title, "タイトル" %></th>
