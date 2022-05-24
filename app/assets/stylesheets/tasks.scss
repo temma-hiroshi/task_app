@@ -1,0 +1,16 @@
+header, footer{
+  background-color: #c52f24;
+  color: #fff;
+  height: 15vh;
+}
+main{
+  min-height:70vh;
+}
+table{
+  border-collapse: collapse;
+  th, tr, td{
+    background-color: #ffdfdf;
+    border: solid 1px black;
+    padding: 10px 20px;
+  }
+}

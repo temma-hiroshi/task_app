@@ -10,6 +10,23 @@
   </head>
 
   <body>
+    <header>
+      <h1>Ruby on Rails スケジュール管理アプリ</h1>
+    </header>
+
+    <% if flash[:notice] %>
+      <p class="notice"><%= flash[:notice] %></p>
+    <% end %>
     <%= yield %>
+    
+    <footer>
+      <h1>
+        <% if controller.action_name == "index" %>
+          現在の日時: <%= Date.today.strftime("%Y年%m月%d日") %>　スケジュール合計: <%= Task.count %>
+        <% else %>
+           現在の日時: <%= Date.today.strftime("%Y年%m月%d日") %>
+        <% end %>
+      </h1>
+    </footer>
   </body>
 </html>
